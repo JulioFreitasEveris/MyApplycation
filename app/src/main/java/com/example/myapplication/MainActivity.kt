@@ -19,17 +19,17 @@ class MainActivity : AppCompatActivity() {
 
         btCalcular.setOnClickListener {
 
-            val nota1 = Integer.parseInt(falta.text.toString())
+            val nota1 = Integer.parseInt(Nota1.text.toString())
             val nota2 = Integer.parseInt(Nota2.text.toString())
             val media = (nota1 + nota2)/ 2
             val faltas = Integer.parseInt(falta.text.toString())
 
             if(media >= 6 && faltas <= 10 ){
-                resultado.setText("Aluno foi Aprovado "+"\n"+ "Nota Final: "+ media + "\n"+"faltas"+nota1)
+                resultado.setText("Aluno foi Aprovado "+"\n"+ "Nota Final: "+ media + "\n"+"faltas"+ faltas)
                 resultado.setTextColor(Color.GREEN)
 
             }else{
-                resultado.setText("Aluno foi Reprovado "+"\n"+ "Nota Final: "+ media + "\n"+"faltas"+nota1)
+                resultado.setText("Aluno foi Reprovado "+"\n"+ "Nota Final: "+ media + "\n"+"faltas"+ faltas)
                 resultado.setTextColor(Color.RED)
             }
         }

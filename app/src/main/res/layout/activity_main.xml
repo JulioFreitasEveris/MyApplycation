@@ -8,10 +8,9 @@
 
     <EditText
         android:id="@+id/Nota1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="96dp"
+        android:layout_width="416dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="36dp"
         android:background="#806E6666"
         android:ems="10"
         android:hint="nota1"
@@ -19,23 +18,25 @@
         android:padding="20dp"
         android:text="nota1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/Nota2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="96dp"
+        android:layout_width="410dp"
+        android:layout_height="67dp"
         android:background="#806E6666"
         android:ems="10"
         android:hint="nota2"
         android:inputType="textPersonName"
         android:padding="20dp"
         android:text="nota2"
+        app:layout_constraintBottom_toTopOf="@+id/falta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nota1"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -50,37 +51,37 @@
         android:text="faltas"
         app:layout_constraintBottom_toTopOf="@+id/bt_calcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nota1"
-        app:layout_constraintVertical_bias="0.501"
+        app:layout_constraintVertical_bias="0.898"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/bt_calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="268dp"
+        android:layout_marginBottom="332dp"
         android:background="@android:color/darker_gray"
         android:text="@string/Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/resultado"
-        android:layout_width="407dp"
-        android:layout_height="174dp"
+        android:layout_width="406dp"
+        android:layout_height="87dp"
         android:gravity="center"
         android:text="resultado"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_calcular"
-        app:layout_constraintVertical_bias="0.139"
+        app:layout_constraintVertical_bias="0.2"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
